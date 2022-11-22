@@ -1,0 +1,113 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+.main-box{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('brooke-lark-wMzx2nBdeng-unsplash.jpg') no-repeat;
+    background-size: cover;
+}
+.box{
+    position: absolute;
+    padding:  40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+    background: rgba(14, 14, 13, 0.8);
+    box-shadow: -10px 10px 20px rgb(14, 13, 13) ;
+}
+.box h2{
+    position: relative;
+    left: 22%;
+    color: rgba(196, 243, 247, 0.8);
+    border-bottom: 2px solid rgb(19, 109, 212);
+    width: 200px;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    transition: 0.5s;
+}
+.box h2:hover{
+    position: relative;
+    left: 40px;
+    width: 300px;
+    border-bottom: 2px solid rgb(32, 19, 212);
+}
+.box .inputbox
+{
+    position: relative;
+    margin-bottom: 20px;
+    
+} 
+.box .inputbox input
+{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+.box .inputbox label
+{
+     position: absolute;
+     left: 0;
+     top: 0;
+     padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.box .inputbox input:focus ~ label,
+.box .inputbox input:valid ~ label
+{
+    top: -26px;
+    left: 0;
+    color: #03a9f4;
+    font-size: 12px;
+}
+.box input[type="submit"]
+{
+    position: relative;
+    left: 23%;
+    background: transparent;
+    border: none;
+    outline: none;
+    background: rgba(61, 121, 250, 0.8);
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 50%;
+    font-size: 16px;
+    transition: 0.5s;
+}
+.box input[type="submit"]:hover{
+    background: rgba(42, 23, 214, 0.8);
+    width: 100%;
+    left: 0;
+}
+
+.form-control{
+    position: absolute;
+    top: 20%;
+    left: 90%;
+}
+#tick{
+    position: relative;
+    left: 19px;
+}
+.form-control i{
+    visibility: hidden;
+}
